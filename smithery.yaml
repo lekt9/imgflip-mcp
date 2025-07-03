@@ -1,0 +1,24 @@
+# Smithery configuration file: https://smithery.ai/docs/build/project-config
+
+startCommand:
+  type: stdio
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({ command: 'imgflip-mcp', args: [], env: { IMGFLIP_USERNAME: config.imgflipUsername, IMGFLIP_PASSWORD: config.imgflipPassword } })
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - imgflipUsername
+      - imgflipPassword
+    properties:
+      imgflipUsername:
+        type: string
+        description: Imgflip API username
+      imgflipPassword:
+        type: string
+        description: Imgflip API password
+  exampleConfig:
+    imgflipUsername: your_username
+    imgflipPassword: your_password
