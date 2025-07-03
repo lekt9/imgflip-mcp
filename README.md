@@ -1,4 +1,5 @@
 # MCP: Meme Creation Platform
+[![smithery badge](https://smithery.ai/badge/@lekt9/imgflip-mcp)](https://smithery.ai/server/@lekt9/imgflip-mcp)
 
 ![MCP Banner](https://i.imgflip.com/9pbq4t.jpg)
 
@@ -18,6 +19,15 @@ It implements the Model Control Protocol (MCP) to allow seamless integration wit
 
 ### Installation
 
+#### Installing via Smithery
+
+To install imgflip-mcp for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@lekt9/imgflip-mcp):
+
+```bash
+npx -y @smithery/cli install @lekt9/imgflip-mcp --client claude
+```
+
+#### Manual Installation
 ```bash
 # Ensure you have uv installed (https://docs.astral.sh/uv/getting-started/installation/)
 git clone https://github.com/redblock-ai/imgflip-mcp.git
